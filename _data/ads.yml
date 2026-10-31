@@ -1,5 +1,51 @@
 themes:
-  - name: "Example theme"
+  - name: Cities
     contents:
-      - name: "Example idea"
-        description: "An example description for this idea."
+      - name: House walls
+        description: "Lend a bland, featureless, sad looking wall as advertising space and make profit, or if you are the owner of a appartment complex, lower the rent! Happy people everywhere!"
+      - name: "Benches and seat"
+        description: |
+          Add some reinforced spikes on the seat and a button to show an ad. After the ad ends, the user can seat for 10 minutes. When people are in need we help them.
+          Same reasoning for restaurant's seats, customers are paying for the food the owner must buy, they pay a staff tip for the cook, they give additional tip so the owner don't have to pay the server as much. We are forgetting the place they take that are often free. By requiring them to watch ads beforehand, we are monetizing the seats. This also have the added benefit to encourage the customer to not linger and hold the place that should be freed for other customers.
+      - name: "Hospital and healthcare center"
+        description: Those are the people the most in need, they are looking for solutions. We are not targeting them, they are looking for help and we can help. The good thing is that these kind of places have a lot of qualified personels that can explain them the benefit of the product in an ad and also give nuance when the customer asks for it. Healthcare professional are also able to contact the seller and give them advice or explain why some information can be wrong. This is a win win situation.
+      - name: Ground
+        description: |
+          People need to look where they walk, and where to they walk? You guessed it, the ground. Having ads on the ground is not as intrusive as pre-roll or flashy screen yet, even static images can be engaging, smart advertisers can print little games to play for the whole walk and keep the user hooked while they are doing something as mindless as walking.
+          We are very convinced that we should not pollute our beautiful planet, that why we are using a 100% biodegradable non toxic paint. Use the ground as a giant canvas for all to see, even from the sky!
+  - name: Car
+    contents:
+      - name: Car paint
+        description: Buy a new car for less if you agree to put some ads on you car. Every month, go back to the car dealership to change the ad and pocket a lump of cash to pay for the car loan. Why would you keep a bleak monotone colour when you can pay less, get payed and have a colourful car?
+      - name : Temporarly unlock premium features
+        description: |
+          Some people may not want to pay extra for premium features like air conditioning, GPS, or car radio. But, they may need it in a pinch. So, we may gracefully provide this service for just a few ads. They have not payed for the service so they should expect nothing from us. We are giving them a favour by allowing to use VIP features.
+          Of course, we are sensible people, we will not show ads when they are driving, they have to stop their car first.
+  - name: School
+    contents: 
+      - name: History book
+        description: Honor your company's past, how you helped brave soldiers by providing them food, helped women when the mens were at war by manufacturing provisions? Make it inside history books for schoold and show how your company had a decisive impact on mankind. This only works if you have an old company.
+      - name: New tuition fees
+        description: We are aware that the children are our futur, that's why we want to create a new fuition fee for the less fortunate children. Students who choses this option may pay for a cheaper education but are required to partake in ads watching sessions. This can replace recess and part of lunch time. In order to ensure the students have diligently watched the ads, and because we are in school, we may test the students about the content of the ads. At the end of the year, we will refund part of the tuition fee as coupon the student can use in the brands that have graciously allowed us to make affordable education possible.
+      - name: In detention
+        description: Children that misbehave are placed in timeout. What are they more likely to do, reflect on their action or plan their next mischief? That's right, by forcing them to watch ads, we are occupiyng their brain so they cannot think about their next nonsense.
+  - name: In people's home
+    contents:
+      - name: Printers
+        description: We know people are angry at printers because the inks are way to expensive. They are now buying alternatives with an ink tank. Those people clearly don't pay a lot for their ink especially since we cannot control the ink's legitimacy, they may have paid only a few cents for a liter. Let's make the printer print some ads in between some of their prints, not when the printer is idling because this will cause a scandal.
+      - name: Elevators
+        description: What are you doing in the elevators? That's right, nothing but waiting; and worst than that, you were waiting even before entering the elevator. So we might as well show you some ads, you may discover your next favorite movie.
+      - name: Night lights
+        description: If you can still hear the ad, that means you are not sleeping. This enables to very precisely target people that may be interested in sleeping aids without ever getting any personal info from them. Our very strict ad screening ensure the ads that are pushed throuth the night light are sleep friendly, our reputation is in line after all.
+      - name: In books
+        description: |
+          Readers are often emotiannaly engaged with what they are reading. So naturally, we want to tap this otherwise wasted potential. By inserting some product placement inside the book in a subtil way, we can subtly improve brand perception of the user.
+          > John used **brand name** to clean the washing machine, and it was spotless. He is very happy with the result and recommends this to everyone.
+  - name: In people's phone
+    contents:
+      - name: Headsets
+        description: Recent headset may detect if the user is wearing the headphone, if they are speaking to someone. We can leverate this technology to fill the downtime of the headset. If the user is not listening to anything and not speaking to anyone around, we might sneak an ad in.
+      - name: Music players
+        description:  Allow us to add ads in between your song you downloaded. You probably have pirated the song anyway, why would you download a song on your phone and not stream it like everyone. An ad from the music player as repayment of the stolen good is the minimum you deserve.
+      - name: Phone customization
+        description: Buy a phone for cheaper. Some options are locked like customizing the wallpaper, let's show some ads. Replace the icons with a themed icon pack for the holiday season or a collaboration for the next big hit release.

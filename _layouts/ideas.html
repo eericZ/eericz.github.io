@@ -4,10 +4,10 @@ layout: page
 
 {{ content }}
 
-{% for theme in site.data.ads.themes %}
-  <h2>{{ theme.name | escape }}</h2>
+{% for theme in site.data[page.ideas_data].themes %}
+  <h3>{{ theme.name | escape }}</h3>
   {% for idea in theme.contents %}
-    <h3>{{ idea.name | escape }}</h3>
-    <p>{{ idea.description | escape }}</p>
+    <h4>{{ idea.name | escape }}</h4>
+    {{ idea.description | markdownify | newline_to_br }}
   {% endfor %}
 {% endfor %}
