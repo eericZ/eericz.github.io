@@ -8,6 +8,6 @@ layout: page
   <h3>{{ theme.name | escape }}</h3>
   {% for idea in theme.contents %}
     <h4>{{ idea.name | escape }}</h4>
-    {{ idea.description | markdownify | newline_to_br }}
+    {{ idea.description | markdownify }}
   {% endfor %}
 {% endfor %}

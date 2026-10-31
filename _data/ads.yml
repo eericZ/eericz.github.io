@@ -6,12 +6,14 @@ themes:
       - name: "Benches and seat"
         description: |
           Add some reinforced spikes on the seat and a button to show an ad. After the ad ends, the user can seat for 10 minutes. When people are in need we help them.
+          
           Same reasoning for restaurant's seats, customers are paying for the food the owner must buy, they pay a staff tip for the cook, they give additional tip so the owner don't have to pay the server as much. We are forgetting the place they take that are often free. By requiring them to watch ads beforehand, we are monetizing the seats. This also have the added benefit to encourage the customer to not linger and hold the place that should be freed for other customers.
       - name: "Hospital and healthcare center"
         description: Those are the people the most in need, they are looking for solutions. We are not targeting them, they are looking for help and we can help. The good thing is that these kind of places have a lot of qualified personels that can explain them the benefit of the product in an ad and also give nuance when the customer asks for it. Healthcare professional are also able to contact the seller and give them advice or explain why some information can be wrong. This is a win win situation.
       - name: Ground
         description: |
           People need to look where they walk, and where to they walk? You guessed it, the ground. Having ads on the ground is not as intrusive as pre-roll or flashy screen yet, even static images can be engaging, smart advertisers can print little games to play for the whole walk and keep the user hooked while they are doing something as mindless as walking.
+          
           We are very convinced that we should not pollute our beautiful planet, that why we are using a 100% biodegradable non toxic paint. Use the ground as a giant canvas for all to see, even from the sky!
   - name: Car
     contents:
@@ -20,6 +22,7 @@ themes:
       - name : Temporarly unlock premium features
         description: |
           Some people may not want to pay extra for premium features like air conditioning, GPS, or car radio. But, they may need it in a pinch. So, we may gracefully provide this service for just a few ads. They have not payed for the service so they should expect nothing from us. We are giving them a favour by allowing to use VIP features.
+          
           Of course, we are sensible people, we will not show ads when they are driving, they have to stop their car first.
   - name: School
     contents: 
@@ -40,6 +43,7 @@ themes:
       - name: In books
         description: |
           Readers are often emotiannaly engaged with what they are reading. So naturally, we want to tap this otherwise wasted potential. By inserting some product placement inside the book in a subtil way, we can subtly improve brand perception of the user.
+          
           > John used **brand name** to clean the washing machine, and it was spotless. He is very happy with the result and recommends this to everyone.
   - name: In people's phone
     contents:
