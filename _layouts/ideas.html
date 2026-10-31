@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% for theme in site.data[page.ideas_data].themes %}
+  <h3>{{ theme.name | escape }}</h3>
+  {% for idea in theme.contents %}
+    <h4>{{ idea.name | escape }}</h4>
+    {{ idea.description | markdownify }}
+  {% endfor %}
+{% endfor %}
