@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% for theme in site.data.ads.themes %}
+  <h2>{{ theme.name | escape }}</h2>
+  {% for idea in theme.contents %}
+    <h3>{{ idea.name | escape }}</h3>
+    <p>{{ idea.description | escape }}</p>
+  {% endfor %}
+{% endfor %}

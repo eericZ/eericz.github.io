@@ -1,0 +1,5 @@
+themes:
+  - name: "Example theme"
+    contents:
+      - name: "Example idea"
+        description: "An example description for this idea."
