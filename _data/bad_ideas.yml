@@ -1,0 +1,28 @@
+themes:
+  - name: Bad ideas listing
+    contents:
+      - name: Holey pizza
+        description: |
+          Let's look at this table
+        
+          |Round|Long|With hole|
+          |-|-|-|
+          |Hamburger|Hotdog|Bagel|
+          |Beignet|Eclair|Doughnut|
+          |Pizza|Pinsa|?|
+
+          Let's invent a pizza with a hole in the middle
+      - name: Digital marketplace tips
+        description: Add a tip field after every online purchase, like after buying gems in a game or after a subscription renewal.
+      - name: Self destructing books
+        description: It contains some chemical that makes the pages decompose. Do not use invisible ink because it will make a book you can reuse to write things on. <br /> Market it to the public as biodegradable books, it encourages actually finishing the book, and you can compost it once you finished reading the book. Market it to book printers (especially for textbooks) as a way discourages second hand.
+      - name: No more no purchase exit
+        description: Pay for using the no purchase exit (something like 50 cents / person), or entry fee in supermarkets.
+      - name: Emergencier service
+        description: Pay for faster (or not slower) emergency services
+      - name: Risk taker fee
+        description: Connected car that uses IA to determine if you made a mistake sends info to your insurance unless you pay a "risk taker" fee to the car company monthly
+      - name: Fast charge
+        description: Paid fast charge for phone, cars...
+      - name: Paid elevators
+        description: Paid elevator in shopping center, unless you have the app and an account with data collection enabled.
