@@ -3,7 +3,7 @@ layout: ideas
 title: Ads
 description: Collects ideas for advertisers. 
 ideas_data: ads
-permalink: /ads/
+permalink: /pages/ads/
 ---
 
 This page collects ideas for advertisers, grouped by theme. Browse the themes below to find each idea and its description.
