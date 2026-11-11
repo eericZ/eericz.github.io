@@ -1,0 +1,39 @@
+{
+  "grid": {
+    "size": 2,
+    "freeSpace": false,
+    "tagCounts": {
+      "sightings": 3,
+      "challenges": 1
+    }
+  },
+  "squares": [
+    {
+      "id": "red-car",
+      "name": "Spot a red car",
+      "description": "Any shade of red counts.",
+      "type": "instant",
+      "tag": "sightings"
+    },
+    {
+      "id": "bird",
+      "name": "Spot a bird",
+      "type": "instant",
+      "tag": "sightings"
+    },
+    {
+      "id": "cloud",
+      "name": "Find a cloud shaped like an animal",
+      "type": "instant",
+      "tag": "sightings"
+    },
+    {
+      "id": "three-things",
+      "name": "Find 3 interesting things",
+      "description": "Count three separate interesting things.",
+      "type": "counter",
+      "amount": 3,
+      "tag": "challenges"
+    }
+  ]
+}
