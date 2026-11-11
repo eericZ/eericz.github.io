@@ -1,14 +1,142 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <title>Bingo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>Bingo generator</title>
+  <link rel="stylesheet" href="bingo.css">
+  <script src="bingo.js" defer></script>
 </head>
-
 <body>
-    <h1>Bingo</h1>
-    Hello
-</body>
+  <main class="app">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">A game for one</p>
+        <h1>Bingo</h1>
+      </div>
+      <a class="help-link" href="#help">How to play</a>
+    </header>
 
+    <section class="controls" aria-labelledby="controls-heading">
+      <h2 id="controls-heading">New game</h2>
+      <form id="game-form" class="control-form">
+        <label class="file-control">
+          <span>Dataset</span>
+          <input id="dataset-file" type="file" accept=".json,application/json">
+        </label>
+        <label class="seed-control" for="seed-input">
+          <span>Seed</span>
+          <input id="seed-input" type="number" step="1" inputmode="numeric" placeholder="Random">
+        </label>
+        <button class="button button-primary" type="submit">Generate</button>
+        <button class="button button-secondary" id="clear-button" type="button">Clear game</button>
+      </form>
+      <p class="dataset-name" id="dataset-name">No dataset loaded</p>
+      <p class="notice" id="notice" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="game-layout" aria-label="Bingo game">
+      <div class="board-wrap">
+        <div class="empty-state" id="empty-state">
+          <strong>Your board will appear here.</strong>
+          <span>Load a JSON dataset, then generate a grid to begin.</span>
+        </div>
+        <div class="board" id="board" role="grid" aria-label="Bingo board" hidden></div>
+      </div>
+
+      <aside class="game-info" aria-label="Game information">
+        <section class="info-card">
+          <h2>Game</h2>
+          <dl class="game-stats">
+            <div>
+              <dt>Elapsed</dt>
+              <dd id="timer" aria-live="off">00:00</dd>
+            </div>
+            <div>
+              <dt>Active seed</dt>
+              <dd><code id="active-seed">—</code></dd>
+            </div>
+          </dl>
+        </section>
+        <section class="info-card">
+          <h2>Completed lines <span class="line-count" id="line-count">0</span></h2>
+          <ul class="line-list" id="line-list">
+            <li class="line-empty">No completed lines yet.</li>
+          </ul>
+        </section>
+      </aside>
+    </section>
+
+    <details class="help" id="help">
+      <summary>Help and data format</summary>
+      <div class="help-content">
+        <section>
+          <h2>Playing</h2>
+          <ul>
+            <li>Click or keyboard-activate a square to validate it. Click it again to unvalidate it.</li>
+            <li>Counter squares advance by one on each click and show their progress. Clicking a completed counter resets it.</li>
+            <li>Use the striped highlight control on a square to mark it without changing its progress. Highlighting and validation can be combined.</li>
+            <li>Use the information control, or hover a square on desktop, to see its description.</li>
+            <li>The timer starts when a grid is generated. Completed rows, columns, and diagonals are listed with their completion times. Completing a line or the whole board does not stop the game.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Loading a dataset</h2>
+          <p>Choose a JSON file, enter an optional whole-number seed, and select <strong>Generate</strong>. The same dataset and seed always produce the same grid. If the seed is blank, a random seed is generated and shown so you can reuse it.</p>
+          <p>Loading another dataset does not change the active board; it is used the next time you generate. <strong>Clear game</strong> removes the board and saved progress but keeps the loaded dataset.</p>
+        </section>
+        <section>
+          <h2>JSON format</h2>
+          <p>A dataset has a <code>grid</code> object and a <code>squares</code> array. Grid <code>size</code> is a positive integer; <code>freeSpace</code> is optional and defaults to false. A free space occupies and validates the center of an odd-sized grid. <code>tagCounts</code> gives exact counts, not weights, and must add up to the number of grid cells that need squares.</p>
+          <p>Each square needs a unique string <code>id</code>, a <code>name</code>, a <code>type</code> (<code>instant</code> or <code>counter</code>), and a string <code>tag</code>. <code>description</code> is optional. Counter squares also need a positive integer <code>amount</code>. Squares with tags absent from <code>tagCounts</code> are accepted but not used to generate a grid.</p>
+          <p>Each configured tag must have enough unique squares. Invalid JSON, configuration, or insufficient squares will be reported instead of generating an incomplete board.</p>
+          <details class="example">
+            <summary>View a complete example dataset</summary>
+            <pre><code>{
+  "grid": {
+    "size": 2,
+    "freeSpace": false,
+    "tagCounts": {
+      "sightings": 3,
+      "challenges": 1
+    }
+  },
+  "squares": [
+    {
+      "id": "red-car",
+      "name": "Spot a red car",
+      "description": "Any shade of red counts.",
+      "type": "instant",
+      "tag": "sightings"
+    },
+    {
+      "id": "bird",
+      "name": "Spot a bird",
+      "type": "instant",
+      "tag": "sightings"
+    },
+    {
+      "id": "cloud",
+      "name": "Find a cloud shaped like an animal",
+      "type": "instant",
+      "tag": "sightings"
+    },
+    {
+      "id": "three-things",
+      "name": "Find 3 interesting things",
+      "description": "Count three separate interesting things.",
+      "type": "counter",
+      "amount": 3,
+      "tag": "challenges"
+    }
+  ]
+}</code></pre>
+          </details>
+          <a class="download-example" href="example.json" download>Download the example dataset</a>
+        </section>
+      </div>
+    </details>
+  </main>
+</body>
 </html>

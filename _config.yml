@@ -31,7 +31,7 @@ theme: minima
 
 # Exclude from processing.
 exclude:
-  - tools/
+  - tools/bingo/bingo.md
 
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
